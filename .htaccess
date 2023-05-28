@@ -1,0 +1,11 @@
+# Set file indeks
+DirectoryIndex index.php index.html
+
+# Aktifkan modul Rewrite
+RewriteEngine on
+
+# Periksa apakah file tidak ditemukan
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Aturan Rewrite untuk menampilkan disclaimer.txt jika tidak ada file
+RewriteRule ^(.*)$ disclaimer.txt [L]

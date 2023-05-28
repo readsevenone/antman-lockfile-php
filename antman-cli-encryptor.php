@@ -11,12 +11,17 @@
  *
  * Penggunaan: php antman-cli-encryptor.php <inputFile> <key> <outputFile>
  *
- * @param string $inputFile  Path ke file input yang akan dienkripsi.
- * @param string $key        Kunci enkripsi yang digunakan untuk AES-CBC.
- * @param string $outputFile Path untuk menyimpan file terenkripsi.
- */
-
-/**
+ * Fitur:
+ * - Pemindahan File: Setelah proses enkripsi selesai, skrip ini akan memindahkan file terenkripsi ke folder `encrypt_files`
+ *   dan memindahkan file asli ke folder `files`.
+ * - Informasi Tanggal Proses: Skrip ini akan mencatat tanggal dan waktu saat proses enkripsi dilakukan dengan menggunakan
+ *   fungsi `date('Y-m-d H:i:s')`.
+ * - Informasi IP Address: Skrip ini akan mencoba mendapatkan alamat IP menggunakan fungsi `gethostbyname(trim(`hostname`))`.
+ *   Namun, perlu diingat bahwa ini dapat mengembalikan alamat IP lokal dalam beberapa situasi.
+ * - Pesan WhatsApp: Skrip ini akan menghasilkan URL WhatsApp dengan pesan yang berisi informasi kunci enkripsi, nama file,
+ *   tanggal proses, dan alamat IP. URL ini dapat digunakan untuk mengirim pesan otomatis ke nomor WhatsApp tertentu dengan
+ *   menggunakan API WhatsApp.
+ *
  * DISCLAIMER:
  * 
  * Harap digunakan dengan tanggung jawab penuh. Penulis skrip ini tidak bertanggung jawab atas

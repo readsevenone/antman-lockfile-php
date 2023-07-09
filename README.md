@@ -91,3 +91,5 @@ Selesai. File hasil dekripsi disimpan di decrypt_files/secret_decrypted.pdf
 Pastikan Anda telah menginstal PHP dan menjalankan script dengan command line interface (CLI) pada sistem operasi yang mendukung PHP.
 
 Catatan: Pastikan untuk mengganti ```<inputFile>```, ```<key>```, dan ```<outputFile>``` dengan nilai yang sesuai saat menjalankan script.
+
+Code by : Ridwan Panji
